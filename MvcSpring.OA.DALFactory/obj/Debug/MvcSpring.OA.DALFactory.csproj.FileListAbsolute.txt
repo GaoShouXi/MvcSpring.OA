@@ -1,0 +1,14 @@
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.DALFactory\obj\Debug\MvcSpring.OA.DALFactory.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.DALFactory\bin\Debug\MvcSpring.OA.DALFactory.dll
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.DALFactory\bin\Debug\MvcSpring.OA.DALFactory.pdb
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.DALFactory\bin\Debug\MvcSpring.OA.DAL.dll
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.DALFactory\bin\Debug\MvcSpring.OA.IDAL.dll
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.DALFactory\bin\Debug\MvcSpring.OA.Model.dll
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.DALFactory\bin\Debug\EntityFramework.dll
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.DALFactory\bin\Debug\MvcSpring.OA.DAL.pdb
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.DALFactory\bin\Debug\MvcSpring.OA.IDAL.pdb
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.DALFactory\bin\Debug\MvcSpring.OA.Model.pdb
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.DALFactory\bin\Debug\EntityFramework.xml
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.DALFactory\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.DALFactory\obj\Debug\MvcSpring.OA.DALFactory.dll
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.DALFactory\obj\Debug\MvcSpring.OA.DALFactory.pdb

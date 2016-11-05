@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="DataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="DataModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="UserInfo" EntityType="DataModel.UserInfo" />
+    <EntitySet Name="ActionInfo" EntityType="DataModel.ActionInfo" />
+    <EntitySet Name="RoleInfo" EntityType="DataModel.RoleInfo" />
+    <EntitySet Name="R_UserInfo_ActionInfo" EntityType="DataModel.R_UserInfo_ActionInfo" />
+    <AssociationSet Name="UserInfoR_UserInfo_ActionInfo" Association="DataModel.UserInfoR_UserInfo_ActionInfo">
+      <End Role="UserInfo" EntitySet="UserInfo" />
+      <End Role="R_UserInfo_ActionInfo" EntitySet="R_UserInfo_ActionInfo" />
+    </AssociationSet>
+    <AssociationSet Name="ActionInfoR_UserInfo_ActionInfo" Association="DataModel.ActionInfoR_UserInfo_ActionInfo">
+      <End Role="ActionInfo" EntitySet="ActionInfo" />
+      <End Role="R_UserInfo_ActionInfo" EntitySet="R_UserInfo_ActionInfo" />
+    </AssociationSet>
+    <AssociationSet Name="UserInfoRoleInfo" Association="DataModel.UserInfoRoleInfo">
+      <End Role="UserInfo" EntitySet="UserInfo" />
+      <End Role="RoleInfo" EntitySet="RoleInfo" />
+    </AssociationSet>
+    <AssociationSet Name="RoleInfoActionInfo" Association="DataModel.RoleInfoActionInfo">
+      <End Role="RoleInfo" EntitySet="RoleInfo" />
+      <End Role="ActionInfo" EntitySet="ActionInfo" />
+    </AssociationSet>
+    <EntitySet Name="StateOperateLog" EntityType="DataModel.StateOperateLog" />
+    <AssociationSet Name="UserInfoStateOperateLog" Association="DataModel.UserInfoStateOperateLog">
+      <End Role="UserInfo" EntitySet="UserInfo" />
+      <End Role="StateOperateLog" EntitySet="StateOperateLog" />
+    </AssociationSet>
+    <EntitySet Name="UserInfoExtention" EntityType="DataModel.UserInfoExtention" />
+    <AssociationSet Name="UserInfoUserInfoExtention" Association="DataModel.UserInfoUserInfoExtention">
+      <End Role="UserInfo" EntitySet="UserInfo" />
+      <End Role="UserInfoExtention" EntitySet="UserInfoExtention" />
+    </AssociationSet>
+    <EntitySet Name="ButtonInfoSet" EntityType="DataModel.ButtonInfo" />
+    <EntitySet Name="Department" EntityType="DataModel.Department" />
+  </EntityContainer>
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" Nullable="false" />
+    <Property Name="PassWord" Type="String" Nullable="false" />
+    <Property Name="ShowName" Type="String" Nullable="false" />
+    <Property Name="DelFlag" Type="Int32" Nullable="false" />
+    <Property Name="SubTime" Type="String" Nullable="false" />
+    <Property Name="Modfiedon" Type="String" Nullable="false" />
+    <Property Name="Remark" Type="String" Nullable="false" />
+    <NavigationProperty Name="R_UserInfo_ActionInfo" Relationship="DataModel.UserInfoR_UserInfo_ActionInfo" FromRole="UserInfo" ToRole="R_UserInfo_ActionInfo" />
+    <NavigationProperty Name="RoleInfo" Relationship="DataModel.UserInfoRoleInfo" FromRole="UserInfo" ToRole="RoleInfo" />
+    <NavigationProperty Name="StateOperateLog" Relationship="DataModel.UserInfoStateOperateLog" FromRole="UserInfo" ToRole="StateOperateLog" />
+    <NavigationProperty Name="UserInfoExtention" Relationship="DataModel.UserInfoUserInfoExtention" FromRole="UserInfo" ToRole="UserInfoExtention" />
+  </EntityType>
+  <EntityType Name="ActionInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ActionName" Type="String" Nullable="false" />
+    <Property Name="Url" Type="String" Nullable="false" />
+    <Property Name="IsMenu" Type="Boolean" Nullable="false" />
+    <Property Name="MenuIcon" Type="String" Nullable="false" />
+    <Property Name="HttpMethod" Type="String" Nullable="false" />
+    <Property Name="Sort" Type="Int32" Nullable="false" />
+    <Property Name="Modfiedon" Type="String" Nullable="false" />
+    <Property Name="DelFlag" Type="Int32" Nullable="false" />
+    <Property Name="SubTime" Type="String" Nullable="false" />
+    <Property Name="Remark" Type="String" Nullable="false" />
+    <NavigationProperty Name="R_UserInfo_ActionInfo" Relationship="DataModel.ActionInfoR_UserInfo_ActionInfo" FromRole="ActionInfo" ToRole="R_UserInfo_ActionInfo" />
+    <NavigationProperty Name="RoleInfo" Relationship="DataModel.RoleInfoActionInfo" FromRole="ActionInfo" ToRole="RoleInfo" />
+  </EntityType>
+  <EntityType Name="RoleInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="String" Nullable="false" />
+    <Property Name="SubTime" Type="String" Nullable="false" />
+    <Property Name="DelFlag" Type="Int32" Nullable="false" />
+    <Property Name="Modfiedon" Type="String" Nullable="false" />
+    <Property Name="Remark" Type="String" Nullable="false" />
+    <NavigationProperty Name="UserInfo" Relationship="DataModel.UserInfoRoleInfo" FromRole="RoleInfo" ToRole="UserInfo" />
+    <NavigationProperty Name="ActionInfo" Relationship="DataModel.RoleInfoActionInfo" FromRole="RoleInfo" ToRole="ActionInfo" />
+  </EntityType>
+  <EntityType Name="R_UserInfo_ActionInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HasPermission" Type="Boolean" Nullable="false" />
+    <Property Name="DelFlag" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="UserInfo" Relationship="DataModel.UserInfoR_UserInfo_ActionInfo" FromRole="R_UserInfo_ActionInfo" ToRole="UserInfo" />
+    <Property Name="UserInfoId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ActionInfo" Relationship="DataModel.ActionInfoR_UserInfo_ActionInfo" FromRole="R_UserInfo_ActionInfo" ToRole="ActionInfo" />
+    <Property Name="ActionInfoId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="UserInfoR_UserInfo_ActionInfo">
+    <End Type="DataModel.UserInfo" Role="UserInfo" Multiplicity="1" />
+    <End Type="DataModel.R_UserInfo_ActionInfo" Role="R_UserInfo_ActionInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="R_UserInfo_ActionInfo">
+        <PropertyRef Name="UserInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ActionInfoR_UserInfo_ActionInfo">
+    <End Type="DataModel.ActionInfo" Role="ActionInfo" Multiplicity="1" />
+    <End Type="DataModel.R_UserInfo_ActionInfo" Role="R_UserInfo_ActionInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ActionInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="R_UserInfo_ActionInfo">
+        <PropertyRef Name="ActionInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserInfoRoleInfo">
+    <End Type="DataModel.UserInfo" Role="UserInfo" Multiplicity="*" />
+    <End Type="DataModel.RoleInfo" Role="RoleInfo" Multiplicity="*" />
+  </Association>
+  <Association Name="RoleInfoActionInfo">
+    <End Type="DataModel.RoleInfo" Role="RoleInfo" Multiplicity="*" />
+    <End Type="DataModel.ActionInfo" Role="ActionInfo" Multiplicity="*" />
+  </Association>
+  <EntityType Name="StateOperateLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="UserInfo" Relationship="DataModel.UserInfoStateOperateLog" FromRole="StateOperateLog" ToRole="UserInfo" />
+    <Property Name="UserInfoId" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" />
+    <Property Name="OperateInfo" Type="String" Nullable="false" />
+    <Property Name="Description" Type="String" Nullable="false" />
+    <Property Name="IfSuccess" Type="Int32" Nullable="false" />
+    <Property Name="OperateDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <Association Name="UserInfoStateOperateLog">
+    <End Type="DataModel.UserInfo" Role="UserInfo" Multiplicity="1" />
+    <End Type="DataModel.StateOperateLog" Role="StateOperateLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StateOperateLog">
+        <PropertyRef Name="UserInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="UserInfoExtention">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="UserInfo" Relationship="DataModel.UserInfoUserInfoExtention" FromRole="UserInfoExtention" ToRole="UserInfo" />
+    <Property Name="UserInfoId" Type="Int32" Nullable="false" />
+    <Property Name="Age" Type="Int32" Nullable="false" />
+    <Property Name="Phone" Type="String" Nullable="false" />
+    <Property Name="Email" Type="String" Nullable="false" />
+    <Property Name="DelFlag" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="UserInfoUserInfoExtention">
+    <End Type="DataModel.UserInfo" Role="UserInfo" Multiplicity="1" />
+    <End Type="DataModel.UserInfoExtention" Role="UserInfoExtention" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserInfoExtention">
+        <PropertyRef Name="UserInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="ButtonInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ButtonName" Type="String" Nullable="false" />
+    <Property Name="Icon" Type="String" Nullable="false" />
+    <Property Name="Sort" Type="Int32" Nullable="false" />
+    <Property Name="AddDate" Type="DateTime" Nullable="false" />
+    <Property Name="HttpMethod" Type="String" Nullable="false" />
+    <Property Name="ControllerFuncName" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DepartmentName" Type="String" Nullable="false" />
+    <Property Name="SubTime" Type="String" Nullable="false" />
+    <Property Name="Modifedon" Type="String" Nullable="false" />
+    <Property Name="Description" Type="String" Nullable="false" />
+    <Property Name="DelFlag" Type="Int32" Nullable="false" />
+  </EntityType>
+</Schema>

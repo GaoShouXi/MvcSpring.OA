@@ -1,0 +1,10 @@
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.IDAL\obj\Debug\MvcSpring.OA.IDAL.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.IDAL\bin\Debug\MvcSpring.OA.IDAL.dll
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.IDAL\bin\Debug\MvcSpring.OA.IDAL.pdb
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.IDAL\bin\Debug\MvcSpring.OA.Model.dll
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.IDAL\bin\Debug\EntityFramework.dll
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.IDAL\bin\Debug\MvcSpring.OA.Model.pdb
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.IDAL\bin\Debug\EntityFramework.xml
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.IDAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.IDAL\obj\Debug\MvcSpring.OA.IDAL.dll
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.IDAL\obj\Debug\MvcSpring.OA.IDAL.pdb

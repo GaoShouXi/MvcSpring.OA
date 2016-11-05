@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net" default-autowire="constructor">
+
+  <object type="MvcSpring.OA.Controllers.UserInfoController,MvcSpring.OA" singleton="false" >
+    <property name="UserInfoService" ref="UserInfoService" />
+    <property name="RoleInfoService" ref="RoleInfoService" />
+    <property name="ActionInfoService" ref="ActionInfoService" />
+    <property name="R_UserInfo_ActionInfoService" ref="R_UserInfo_ActionInfoService" />
+  </object>
+ 
+  <object type="MvcSpring.OA.Controllers.ActionInfoController,MvcSpring.OA" singleton="false" >
+    <property name="ActionInfoService" ref="ActionInfoService" />
+    <property name="UserInfoService" ref="UserInfoService" />
+    <property name="RoleInfoService" ref="RoleInfoService" />
+  </object>
+  <object type="MvcSpring.OA.Controllers.LoginController,MvcSpring.OA" singleton="false" >
+    <property name="UserInfoService" ref="UserInfoService" />
+  </object>
+  <object type="MvcSpring.OA.Controllers.RoleInfoController,MvcSpring.OA" singleton="false" >
+    <property name="RoleInfoService" ref="RoleInfoService" />
+  </object>
+  <object type="MvcSpring.OA.Controllers.HomeController,MvcSpring.OA" singleton="false" >
+    <property name="UserInfoService" ref="UserInfoService" />
+    <property name="ActionInfoService" ref="ActionInfoService" />
+  </object>
+  <object type="MvcSpring.OA.Controllers.ButtonController,MvcSpring.OA" singleton="false" >
+    <property name="ButtonInfoService" ref="ButtonInfoService" />
+    
+  </object>
+  <object type="MvcSpring.OA.Controllers.DepartmentController,MvcSpring.OA" singleton="false" >
+    <property name="DepartmentService" ref="DepartmentService" />
+    <property name="UserInfoService" ref="UserInfoService" />
+    
+  </object>
+  <object type="MvcSpring.OA.Controllers.StateOperateLogController,MvcSpring.OA" singleton="false" >
+    <property name="StateOperateLogService" ref="StateOperateLogService" />
+    
+  </object>
+
+
+
+
+
+
+</objects>

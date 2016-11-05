@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a38321e02bdb4e1fb2fa492f56ebd587" Name="Diagram1" >
+        <EntityTypeShape EntityType="DataModel.UserInfo" Width="1.5" PointX="0.5" PointY="0.5" />
+        <EntityTypeShape EntityType="DataModel.ActionInfo" Width="1.5" PointX="8.375" PointY="0.5" />
+        <EntityTypeShape EntityType="DataModel.RoleInfo" Width="1.5" PointX="6.625" PointY="3" />
+        <EntityTypeShape EntityType="DataModel.R_UserInfo_ActionInfo" Width="1.5" PointX="4.5" PointY="0.5" />
+        <AssociationConnector Association="DataModel.UserInfoR_UserInfo_ActionInfo" />
+        <AssociationConnector Association="DataModel.ActionInfoR_UserInfo_ActionInfo" />
+        <AssociationConnector Association="DataModel.UserInfoRoleInfo" />
+        <AssociationConnector Association="DataModel.RoleInfoActionInfo" />
+        <EntityTypeShape EntityType="DataModel.StateOperateLog" Width="1.5" PointX="2.375" PointY="3.625" />
+        <AssociationConnector Association="DataModel.UserInfoStateOperateLog" />
+        <EntityTypeShape EntityType="DataModel.UserInfoExtention" Width="1.5" PointX="0.5" PointY="5" />
+        <AssociationConnector Association="DataModel.UserInfoUserInfoExtention" />
+        <EntityTypeShape EntityType="DataModel.ButtonInfo" Width="1.5" PointX="8.5" PointY="4.25" />
+        <EntityTypeShape EntityType="DataModel.Department" Width="1.5" PointX="4.375" PointY="3.25" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net" default-autowire="constructor">
+  <!--<object name="DbSessionFactory " type="MvcSpring.OA.DALFactory.DbSessionFactory,MvcSpring.OA.DALFactory" singleton="true" >
+
+  </object>-->
+  <!--spring net 非静态-->
+  <!--<object name="DbSession" type="MvcSpring.OA.DALFactory.DbSession,MvcSpring.OA.DALFactory" singleton="false" factory-method="GetCurrentDbSession" factory-object="DbSessionFactory">
+  </object>-->
+  <object name="DbSession" type="MvcSpring.OA.DALFactory.DbSessionFactory,MvcSpring.OA.DALFactory" singleton="false" factory-method="GetCurrentDbSession" >
+  </object>
+
+  <object name="UserInfoDal" type="MvcSpring.OA.DAL.UserInfoDal,MvcSpring.OA.DAL" singleton="false" >
+
+  </object>
+  <object name="ActionInfoDal" type="MvcSpring.OA.DAL.ActionInfoDal,MvcSpring.OA.DAL" singleton="false" >
+
+  </object>
+  <object name="RoleInfoDal" type="MvcSpring.OA.DAL.RoleInfoDal,MvcSpring.OA.DAL" singleton="false" >
+
+  </object>
+  <object name="R_UserInfo_ActionInfoDal" type="MvcSpring.OA.DAL.R_UserInfo_ActionInfoDal,MvcSpring.OA.DAL" singleton="false" >
+
+  </object>
+  <object name="ButtonInfoDal" type="MvcSpring.OA.DAL.ButtonInfoDal,MvcSpring.OA.DAL" singleton="false" >
+
+  </object>
+  <object name="DepartmentDal" type="MvcSpring.OA.DAL.DepartmentDal,MvcSpring.OA.DAL" singleton="false" >
+
+  </object>
+  <object name="StateOperateLogDal" type="MvcSpring.OA.DAL.StateOperateLogDal,MvcSpring.OA.DAL" singleton="false" >
+
+  </object>
+</objects>

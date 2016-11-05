@@ -1,0 +1,14 @@
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.BLL\obj\Debug\MvcSpring.OA.BLL.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.BLL\bin\Debug\MvcSpring.OA.BLL.dll
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.BLL\bin\Debug\MvcSpring.OA.BLL.pdb
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.BLL\bin\Debug\MvcSpring.OA.IBLL.dll
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.BLL\bin\Debug\MvcSpring.OA.IDAL.dll
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.BLL\bin\Debug\MvcSpring.OA.Model.dll
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.BLL\bin\Debug\EntityFramework.dll
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.BLL\bin\Debug\MvcSpring.OA.IBLL.pdb
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.BLL\bin\Debug\MvcSpring.OA.IDAL.pdb
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.BLL\bin\Debug\MvcSpring.OA.Model.pdb
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.BLL\bin\Debug\EntityFramework.xml
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.BLL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.BLL\obj\Debug\MvcSpring.OA.BLL.dll
+D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.BLL\obj\Debug\MvcSpring.OA.BLL.pdb

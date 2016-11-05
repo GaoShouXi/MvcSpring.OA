@@ -1,0 +1,92 @@
+2016-11-02 14:51:35,095[6]ERRORDemo-System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 MvcSpring.OA.Controllers.UserInfoController.DeleteUser(String ids) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\Controllers\UserInfoController.cs:行号 54
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+2016-11-02 16:33:28,488[6]ERRORDemo-System.InvalidOperationException: 不能在类型“UserInfo”的属性值中，将类型“DelFlagEnum”的值分配给类型“Int32”的属性“DelFlag”。
+   在 System.Data.Entity.Internal.InternalPropertyValues.SetValue(IPropertyValuesItem item, Object newValue)
+   在 System.Data.Entity.Internal.InternalPropertyEntry.set_CurrentValue(Object value)
+   在 MvcSpring.OA.DAL.BaseDal`1.Delete(Int32 id) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.DAL\BaseDal.cs:行号 67
+   在 MvcSpring.OA.BLL.BaseService`1.DeleteList(List`1 ids) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.BLL\BaseService.cs:行号 40
+   在 MvcSpring.OA.Controllers.UserInfoController.DeleteUser(String ids) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\Controllers\UserInfoController.cs:行号 57
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+2016-11-02 16:35:02,996[7]ERRORDemo-System.InvalidOperationException: 不能在类型“UserInfo”的属性值中，将类型“DelFlagEnum”的值分配给类型“Int32”的属性“DelFlag”。
+   在 System.Data.Entity.Internal.InternalPropertyValues.SetValue(IPropertyValuesItem item, Object newValue)
+   在 System.Data.Entity.Internal.InternalPropertyEntry.set_CurrentValue(Object value)
+   在 MvcSpring.OA.DAL.BaseDal`1.Delete(Int32 id) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.DAL\BaseDal.cs:行号 67
+   在 MvcSpring.OA.BLL.BaseService`1.DeleteList(List`1 ids) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.BLL\BaseService.cs:行号 40
+   在 MvcSpring.OA.Controllers.UserInfoController.DeleteUser(String ids) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\Controllers\UserInfoController.cs:行号 57
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+2016-11-02 16:42:31,178[11]ERRORDemo-System.InvalidOperationException: 不能在类型“UserInfo”的属性值中，将类型“Int16”的值分配给类型“Int32”的属性“DelFlag”。
+   在 System.Data.Entity.Internal.InternalPropertyValues.SetValue(IPropertyValuesItem item, Object newValue)
+   在 System.Data.Entity.Internal.InternalPropertyEntry.set_CurrentValue(Object value)
+   在 MvcSpring.OA.DAL.BaseDal`1.Delete(Int32 id) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.DAL\BaseDal.cs:行号 67
+   在 MvcSpring.OA.BLL.BaseService`1.DeleteList(List`1 ids) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.BLL\BaseService.cs:行号 40
+   在 MvcSpring.OA.Controllers.UserInfoController.DeleteUser(String ids) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\Controllers\UserInfoController.cs:行号 57
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+2016-11-02 20:34:04,460[14]ERRORDemo-System.Data.Entity.Validation.DbEntityValidationException: 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 MvcSpring.OA.DALFactory.DbSession.SaveChanges() 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.DALFactory\DbSession.cs:行号 14
+   在 MvcSpring.OA.BLL.BaseService`1.Add(T entity) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.BLL\BaseService.cs:行号 53
+   在 MvcSpring.OA.Controllers.UserInfoController.Add(UserInfo userInfo) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\Controllers\UserInfoController.cs:行号 72
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+2016-11-02 20:50:38,203[6]ERRORDemo-System.ArgumentException: 对于“MvcSpring.OA.Controllers.UserInfoController”中方法“System.Web.Mvc.ActionResult Find(Int32)”的不可以为 null 的类型“System.Int32”的参数“id”，参数字典包含一个 null 项。可选参数必须为引用类型、可以为 null 的类型或声明为可选参数。
+参数名: parameters
+   在 System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   在 System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   在 System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   在 System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)

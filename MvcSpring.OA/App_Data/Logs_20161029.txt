@@ -1,0 +1,447 @@
+2016-10-29 21:18:11,767[6]ERRORDemo-System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73” ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”
+
+=== 预绑定状态信息 ===
+日志: DisplayName = ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+ (Fully-specified)
+日志: Appbase = file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/
+日志: 初始 PrivatePath = D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\bin
+调用程序集: Memcached.ClientLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42c0400964dcc297。
+===
+日志: 此绑定从 default 加载上下文开始。
+日志: 正在使用应用程序配置文件: D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\web.config
+日志: 使用主机配置文件: D:\Documents\IISExpress\config\aspnet.config
+日志: 使用 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\config\machine.config 的计算机配置文件。
+日志: 在应用程序配置文件中找到重定向: 0.84.0.0 已重定向到 0.85.5.452。
+日志: 策略后引用: ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.EXE。
+
+   在 Memcached.ClientLibrary.MemcachedClient.Set(String cmdname, String key, Object obj, DateTime expiry, Object hashCode, Boolean asString)
+   在 Memcached.ClientLibrary.MemcachedClient.Add(String key, Object value, DateTime expiry) 位置 C:\devroot\memcacheddotnet\trunk\clientlib\src\clientlib\MemCachedClient.cs:行号 513
+   在 MvcSpring.OA.Common.Cache.MemcacheWriter.AddCache(String key, Object value, DateTime expDate) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.Common\Cache\MemcacheWriter.cs:行号 41
+   在 MvcSpring.OA.Common.Cache.CacheHelper.AddCache(String key, Object value, DateTime expDate) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.Common\Cache\CacheHelper.cs:行号 23
+   在 MvcSpring.OA.Controllers.LoginController.BaseLogin() 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\Controllers\LoginController.cs:行号 52
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+
+2016-10-29 21:19:41,367[7]ERRORDemo-System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73” ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”
+
+=== 预绑定状态信息 ===
+日志: DisplayName = ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+ (Fully-specified)
+日志: Appbase = file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/
+日志: 初始 PrivatePath = D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\bin
+调用程序集: Memcached.ClientLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42c0400964dcc297。
+===
+日志: 此绑定从 default 加载上下文开始。
+日志: 正在使用应用程序配置文件: D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\web.config
+日志: 使用主机配置文件: D:\Documents\IISExpress\config\aspnet.config
+日志: 使用 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\config\machine.config 的计算机配置文件。
+日志: 在应用程序配置文件中找到重定向: 0.84.0.0 已重定向到 0.85.5.452。
+日志: 策略后引用: ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.EXE。
+
+   在 Memcached.ClientLibrary.MemcachedClient.Set(String cmdname, String key, Object obj, DateTime expiry, Object hashCode, Boolean asString)
+   在 Memcached.ClientLibrary.MemcachedClient.Add(String key, Object value, DateTime expiry) 位置 C:\devroot\memcacheddotnet\trunk\clientlib\src\clientlib\MemCachedClient.cs:行号 513
+   在 MvcSpring.OA.Common.Cache.MemcacheWriter.AddCache(String key, Object value, DateTime expDate) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.Common\Cache\MemcacheWriter.cs:行号 41
+   在 MvcSpring.OA.Common.Cache.CacheHelper.AddCache(String key, Object value, DateTime expDate) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.Common\Cache\CacheHelper.cs:行号 23
+   在 MvcSpring.OA.Controllers.LoginController.BaseLogin() 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\Controllers\LoginController.cs:行号 52
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+
+2016-10-29 21:23:57,230[6]ERRORDemo-System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73” ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”
+
+=== 预绑定状态信息 ===
+日志: DisplayName = ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+ (Fully-specified)
+日志: Appbase = file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/
+日志: 初始 PrivatePath = D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\bin
+调用程序集: Memcached.ClientLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42c0400964dcc297。
+===
+日志: 此绑定从 default 加载上下文开始。
+日志: 正在使用应用程序配置文件: D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\web.config
+日志: 使用主机配置文件: D:\Documents\IISExpress\config\aspnet.config
+日志: 使用 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\config\machine.config 的计算机配置文件。
+日志: 在应用程序配置文件中找到重定向: 0.84.0.0 已重定向到 0.85.5.452。
+日志: 策略后引用: ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.EXE。
+
+   在 Memcached.ClientLibrary.MemcachedClient.Set(String cmdname, String key, Object obj, DateTime expiry, Object hashCode, Boolean asString)
+   在 Memcached.ClientLibrary.MemcachedClient.Add(String key, Object value, DateTime expiry) 位置 C:\devroot\memcacheddotnet\trunk\clientlib\src\clientlib\MemCachedClient.cs:行号 513
+   在 MvcSpring.OA.Common.Cache.MemcacheWriter.AddCache(String key, Object value, DateTime expDate) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.Common\Cache\MemcacheWriter.cs:行号 41
+   在 MvcSpring.OA.Common.Cache.CacheHelper.AddCache(String key, Object value, DateTime expDate) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.Common\Cache\CacheHelper.cs:行号 23
+   在 MvcSpring.OA.Controllers.LoginController.BaseLogin() 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\Controllers\LoginController.cs:行号 52
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+
+2016-10-29 21:24:43,440[7]ERRORDemo-System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73” ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”
+
+=== 预绑定状态信息 ===
+日志: DisplayName = ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+ (Fully-specified)
+日志: Appbase = file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/
+日志: 初始 PrivatePath = D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\bin
+调用程序集: Memcached.ClientLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42c0400964dcc297。
+===
+日志: 此绑定从 default 加载上下文开始。
+日志: 正在使用应用程序配置文件: D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\web.config
+日志: 使用主机配置文件: D:\Documents\IISExpress\config\aspnet.config
+日志: 使用 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\config\machine.config 的计算机配置文件。
+日志: 在应用程序配置文件中找到重定向: 0.84.0.0 已重定向到 0.85.5.452。
+日志: 策略后引用: ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.EXE。
+
+   在 Memcached.ClientLibrary.MemcachedClient.Set(String cmdname, String key, Object obj, DateTime expiry, Object hashCode, Boolean asString)
+   在 Memcached.ClientLibrary.MemcachedClient.Add(String key, Object value, DateTime expiry) 位置 C:\devroot\memcacheddotnet\trunk\clientlib\src\clientlib\MemCachedClient.cs:行号 513
+   在 MvcSpring.OA.Common.Cache.MemcacheWriter.AddCache(String key, Object value, DateTime expDate) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.Common\Cache\MemcacheWriter.cs:行号 41
+   在 MvcSpring.OA.Common.Cache.CacheHelper.AddCache(String key, Object value, DateTime expDate) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.Common\Cache\CacheHelper.cs:行号 23
+   在 MvcSpring.OA.Controllers.LoginController.BaseLogin() 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\Controllers\LoginController.cs:行号 52
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+
+2016-10-29 21:25:48,740[7]ERRORDemo-System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73” ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”
+
+=== 预绑定状态信息 ===
+日志: DisplayName = ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+ (Fully-specified)
+日志: Appbase = file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/
+日志: 初始 PrivatePath = D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\bin
+调用程序集: Memcached.ClientLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42c0400964dcc297。
+===
+日志: 此绑定从 default 加载上下文开始。
+日志: 正在使用应用程序配置文件: D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\web.config
+日志: 使用主机配置文件: D:\Documents\IISExpress\config\aspnet.config
+日志: 使用 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\config\machine.config 的计算机配置文件。
+日志: 在应用程序配置文件中找到重定向: 0.84.0.0 已重定向到 0.85.5.452。
+日志: 策略后引用: ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.EXE。
+
+   在 Memcached.ClientLibrary.MemcachedClient.Set(String cmdname, String key, Object obj, DateTime expiry, Object hashCode, Boolean asString)
+   在 Memcached.ClientLibrary.MemcachedClient.Add(String key, Object value, DateTime expiry) 位置 C:\devroot\memcacheddotnet\trunk\clientlib\src\clientlib\MemCachedClient.cs:行号 513
+   在 MvcSpring.OA.Common.Cache.MemcacheWriter.AddCache(String key, Object value, DateTime expDate) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.Common\Cache\MemcacheWriter.cs:行号 41
+   在 MvcSpring.OA.Common.Cache.CacheHelper.AddCache(String key, Object value, DateTime expDate) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.Common\Cache\CacheHelper.cs:行号 23
+   在 MvcSpring.OA.Controllers.LoginController.BaseLogin() 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\Controllers\LoginController.cs:行号 52
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+
+2016-10-29 21:34:58,209[6]ERRORMemcached.ClientLibrary.MemcachedClient-Exception thrown while trying to get object from cache for key: 8f9520bb-a026-4056-a094-51d4b5919e77
+System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73” ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”
+
+=== 预绑定状态信息 ===
+日志: DisplayName = ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+ (Fully-specified)
+日志: Appbase = file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/
+日志: 初始 PrivatePath = D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\bin
+调用程序集: Memcached.ClientLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42c0400964dcc297。
+===
+日志: 此绑定从 default 加载上下文开始。
+日志: 正在使用应用程序配置文件: D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\web.config
+日志: 使用主机配置文件: D:\Documents\IISExpress\config\aspnet.config
+日志: 使用 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\config\machine.config 的计算机配置文件。
+日志: 在应用程序配置文件中找到重定向: 0.84.0.0 已重定向到 0.85.5.452。
+日志: 策略后引用: ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.EXE。
+
+   在 Memcached.ClientLibrary.MemcachedClient.LoadItems(SockIO sock, Hashtable hm, Boolean asString)
+   在 Memcached.ClientLibrary.MemcachedClient.Get(String key, Object hashCode, Boolean asString) 位置 C:\devroot\memcacheddotnet\trunk\clientlib\src\clientlib\MemCachedClient.cs:行号 1126
+
+
+2016-10-29 21:35:48,550[6]ERRORDemo-System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73” ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”
+
+=== 预绑定状态信息 ===
+日志: DisplayName = ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+ (Fully-specified)
+日志: Appbase = file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/
+日志: 初始 PrivatePath = D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\bin
+调用程序集: Memcached.ClientLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42c0400964dcc297。
+===
+日志: 此绑定从 default 加载上下文开始。
+日志: 正在使用应用程序配置文件: D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\web.config
+日志: 使用主机配置文件: D:\Documents\IISExpress\config\aspnet.config
+日志: 使用 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\config\machine.config 的计算机配置文件。
+日志: 在应用程序配置文件中找到重定向: 0.84.0.0 已重定向到 0.85.5.452。
+日志: 策略后引用: ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+日志: 相同的绑定已出现过，因 hr = 0x80070002 而失败。
+
+   在 Memcached.ClientLibrary.MemcachedClient.Set(String cmdname, String key, Object obj, DateTime expiry, Object hashCode, Boolean asString)
+   在 Memcached.ClientLibrary.MemcachedClient.Add(String key, Object value, DateTime expiry) 位置 C:\devroot\memcacheddotnet\trunk\clientlib\src\clientlib\MemCachedClient.cs:行号 513
+   在 MvcSpring.OA.Common.Cache.MemcacheWriter.AddCache(String key, Object value, DateTime expDate) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.Common\Cache\MemcacheWriter.cs:行号 41
+   在 MvcSpring.OA.Common.Cache.CacheHelper.AddCache(String key, Object value, DateTime expDate) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.Common\Cache\CacheHelper.cs:行号 23
+   在 MvcSpring.OA.Controllers.LoginController.BaseLogin() 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\Controllers\LoginController.cs:行号 52
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+
+2016-10-29 21:36:29,443[6]ERRORMemcached.ClientLibrary.MemcachedClient-Exception thrown while trying to get object from cache for key: 8f9520bb-a026-4056-a094-51d4b5919e77
+System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73” ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”
+
+=== 预绑定状态信息 ===
+日志: DisplayName = ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+ (Fully-specified)
+日志: Appbase = file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/
+日志: 初始 PrivatePath = D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\bin
+调用程序集: Memcached.ClientLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42c0400964dcc297。
+===
+日志: 此绑定从 default 加载上下文开始。
+日志: 正在使用应用程序配置文件: D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\web.config
+日志: 使用主机配置文件: D:\Documents\IISExpress\config\aspnet.config
+日志: 使用 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\config\machine.config 的计算机配置文件。
+日志: 在应用程序配置文件中找到重定向: 0.84.0.0 已重定向到 0.85.5.452。
+日志: 策略后引用: ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.EXE。
+
+   在 Memcached.ClientLibrary.MemcachedClient.LoadItems(SockIO sock, Hashtable hm, Boolean asString)
+   在 Memcached.ClientLibrary.MemcachedClient.Get(String key, Object hashCode, Boolean asString) 位置 C:\devroot\memcacheddotnet\trunk\clientlib\src\clientlib\MemCachedClient.cs:行号 1126
+
+
+2016-10-29 21:37:25,411[6]ERRORMemcached.ClientLibrary.MemcachedClient-Exception thrown while trying to get object from cache for key: 8f9520bb-a026-4056-a094-51d4b5919e77
+System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73” ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”
+
+=== 预绑定状态信息 ===
+日志: DisplayName = ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+ (Fully-specified)
+日志: Appbase = file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/
+日志: 初始 PrivatePath = D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\bin
+调用程序集: Memcached.ClientLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42c0400964dcc297。
+===
+日志: 此绑定从 default 加载上下文开始。
+日志: 正在使用应用程序配置文件: D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\web.config
+日志: 使用主机配置文件: D:\Documents\IISExpress\config\aspnet.config
+日志: 使用 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\config\machine.config 的计算机配置文件。
+日志: 在应用程序配置文件中找到重定向: 0.84.0.0 已重定向到 0.85.5.452。
+日志: 策略后引用: ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.EXE。
+
+   在 Memcached.ClientLibrary.MemcachedClient.LoadItems(SockIO sock, Hashtable hm, Boolean asString)
+   在 Memcached.ClientLibrary.MemcachedClient.Get(String key, Object hashCode, Boolean asString) 位置 C:\devroot\memcacheddotnet\trunk\clientlib\src\clientlib\MemCachedClient.cs:行号 1126
+
+
+2016-10-29 21:37:49,951[7]ERRORDemo-System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73” ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”
+
+=== 预绑定状态信息 ===
+日志: DisplayName = ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+ (Fully-specified)
+日志: Appbase = file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/
+日志: 初始 PrivatePath = D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\bin
+调用程序集: Memcached.ClientLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42c0400964dcc297。
+===
+日志: 此绑定从 default 加载上下文开始。
+日志: 正在使用应用程序配置文件: D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\web.config
+日志: 使用主机配置文件: D:\Documents\IISExpress\config\aspnet.config
+日志: 使用 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\config\machine.config 的计算机配置文件。
+日志: 在应用程序配置文件中找到重定向: 0.84.0.0 已重定向到 0.85.5.452。
+日志: 策略后引用: ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+日志: 相同的绑定已出现过，因 hr = 0x80070002 而失败。
+
+   在 Memcached.ClientLibrary.MemcachedClient.Set(String cmdname, String key, Object obj, DateTime expiry, Object hashCode, Boolean asString)
+   在 Memcached.ClientLibrary.MemcachedClient.Add(String key, Object value, DateTime expiry) 位置 C:\devroot\memcacheddotnet\trunk\clientlib\src\clientlib\MemCachedClient.cs:行号 513
+   在 MvcSpring.OA.Common.Cache.MemcacheWriter.AddCache(String key, Object value, DateTime expDate) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.Common\Cache\MemcacheWriter.cs:行号 41
+   在 MvcSpring.OA.Common.Cache.CacheHelper.AddCache(String key, Object value, DateTime expDate) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.Common\Cache\CacheHelper.cs:行号 23
+   在 MvcSpring.OA.Controllers.LoginController.BaseLogin() 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\Controllers\LoginController.cs:行号 52
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+
+2016-10-29 21:40:05,150[6]ERRORMemcached.ClientLibrary.MemcachedClient-Exception thrown while trying to get object from cache for key: 8f9520bb-a026-4056-a094-51d4b5919e77
+System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73” ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”
+
+=== 预绑定状态信息 ===
+日志: DisplayName = ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+ (Fully-specified)
+日志: Appbase = file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/
+日志: 初始 PrivatePath = D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\bin
+调用程序集: Memcached.ClientLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42c0400964dcc297。
+===
+日志: 此绑定从 default 加载上下文开始。
+日志: 正在使用应用程序配置文件: D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\web.config
+日志: 使用主机配置文件: D:\Documents\IISExpress\config\aspnet.config
+日志: 使用 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\config\machine.config 的计算机配置文件。
+日志: 在应用程序配置文件中找到重定向: 0.84.0.0 已重定向到 0.85.5.452。
+日志: 策略后引用: ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.DLL。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///C:/Users/Administrator/AppData/Local/Temp/Temporary ASP.NET Files/root/af4c254f/88c4f079/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib.EXE。
+日志: 尝试下载新的 URL file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/bin/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.EXE。
+
+   在 Memcached.ClientLibrary.MemcachedClient.LoadItems(SockIO sock, Hashtable hm, Boolean asString)
+   在 Memcached.ClientLibrary.MemcachedClient.Get(String key, Object hashCode, Boolean asString) 位置 C:\devroot\memcacheddotnet\trunk\clientlib\src\clientlib\MemCachedClient.cs:行号 1126
+
+
+2016-10-29 21:40:30,488[7]ERRORDemo-System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73” ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73”
+
+=== 预绑定状态信息 ===
+日志: DisplayName = ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+ (Fully-specified)
+日志: Appbase = file:///D:/Documents/Visual Studio 2013/Projects/MvcSpring.OA/MvcSpring.OA/
+日志: 初始 PrivatePath = D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\bin
+调用程序集: Memcached.ClientLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42c0400964dcc297。
+===
+日志: 此绑定从 default 加载上下文开始。
+日志: 正在使用应用程序配置文件: D:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\web.config
+日志: 使用主机配置文件: D:\Documents\IISExpress\config\aspnet.config
+日志: 使用 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\config\machine.config 的计算机配置文件。
+日志: 在应用程序配置文件中找到重定向: 0.84.0.0 已重定向到 0.85.5.452。
+日志: 策略后引用: ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73
+日志: 相同的绑定已出现过，因 hr = 0x80070002 而失败。
+
+   在 Memcached.ClientLibrary.MemcachedClient.Set(String cmdname, String key, Object obj, DateTime expiry, Object hashCode, Boolean asString)
+   在 Memcached.ClientLibrary.MemcachedClient.Add(String key, Object value, DateTime expiry) 位置 C:\devroot\memcacheddotnet\trunk\clientlib\src\clientlib\MemCachedClient.cs:行号 513
+   在 MvcSpring.OA.Common.Cache.MemcacheWriter.AddCache(String key, Object value, DateTime expDate) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.Common\Cache\MemcacheWriter.cs:行号 41
+   在 MvcSpring.OA.Common.Cache.CacheHelper.AddCache(String key, Object value, DateTime expDate) 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA.Common\Cache\CacheHelper.cs:行号 23
+   在 MvcSpring.OA.Controllers.LoginController.BaseLogin() 位置 d:\Documents\Visual Studio 2013\Projects\MvcSpring.OA\MvcSpring.OA\Controllers\LoginController.cs:行号 52
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+
+
